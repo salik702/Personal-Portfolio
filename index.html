@@ -106,8 +106,8 @@
         <section class="firstSection">
             <div class="leftSection">
                 Hi, My name is <span class="purple">Salik</span>
-                <div>and I am a passionate
-                    <div>Web Developer</div>
+                <div>and I am a passionate<br>
+                    <span id="element"></span>
 
                 </div>
 
@@ -124,6 +124,14 @@
 
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        // Load type.js animation through website
+
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'Ehical Hacker', 'Freelancer' ],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 
 </html>
