@@ -15,7 +15,7 @@
 <script src="script.js"></script>
 
 <style>
-    *{
+    * {
         padding: 0;
         margin: 0;
     }
@@ -27,48 +27,53 @@
     }
 
     nav {
-        display:flex;
-        justify-content:space-around ;
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        background-color:rgb(22, 22, 87); 
-        height:80px;
+        background-color: rgb(22, 22, 87);
+        height: 80px;
     }
-    nav ul{
-        display:flex;
+
+    nav ul {
+        display: flex;
         justify-content: center;
     }
-    nav ul li{
-        list-style:none;
-        margin : 0 23px;
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
 
     }
-    .left{
+
+    .left {
         font-size: 1.5rem;
     }
-    .firstSection{
-        display:flex;
-        justify-content:space-around;
-        margin :23px 0;
-       
-    }
-    .firstSection div{
-      width :30%;
-    }
-    .leftSection{
-        background-color: red;
-        font-size: 3rem;
-    }
-    .rightSection img{
-        width:80%;
-        margin :50px 0;
 
-        
-        
-      
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+
     }
 
+    .firstSection>div {
+        width: 30%;
+    }
 
+    .leftSection {
 
+        font-size: 2.5rem;
+        margin: 30px 0;
+    }
+
+    .rightSection img {
+        width: 80%;
+
+    }
+
+    .purple {
+        color: rgb(135, 61, 205);
+    }
 </style>
 
 <body>
@@ -90,13 +95,16 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, My name is Salik
-                <div>and I am a Web Developer</div>
+                Hi, My name is <span class="purple">Salik</span>
+                <div>and I am a passionate
+                    <div>Web Developer</div>
+
+                </div>
+
 
             </div>
             <div class="rightSection">
-                <img src="bg.png"
-            </div>
+                <img src="bg.png" </div>
 
             </div>
 
