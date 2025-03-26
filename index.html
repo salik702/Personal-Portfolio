@@ -44,15 +44,25 @@
         margin: 0 23px;
 
     }
+
     nav ul li a {
         text-decoration: none;
-        color:white
+        color: white
+    }
 
-    }
     nav ul li a:hover {
-       color:rgb(117, 117, 228);
-       font-size: 1.04rem;
+        color: rgb(117, 117, 228);
+        font-size: 1.04rem;
     }
+
+    main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    width: 80vw; 
+    margin: 60px 0 60px 10vw;
+}
+
 
     .left {
         font-size: 1.5rem;
@@ -73,21 +83,52 @@
     .leftSection {
 
         font-size: 2rem;
-        
+
     }
 
     .rightSection img {
-        width: 70%;
+        width: 60%;
 
     }
 
     .purple {
         color: rgb(135, 61, 205);
     }
-    #element{
+
+    #element {
         color: rgb(135, 61, 205);
 
     }
+
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height:80vh;
+    }
+
+    .secondSection h1 {
+        font-size: 1.9rem;
+        height :5vh;
+
+    }
+
+    .secondSection .box {
+    background-color: white;
+    width: 70vw;
+    height: 2px;
+    margin: 56px auto;
+}
+
+
+
+    .text-grey {
+        color: grey;
+    }
+
+
+
+
+    
 </style>
 
 <body>
@@ -123,6 +164,28 @@
             </div>
 
         </section>
+
+
+        <hr>
+        <section class="secondSection">
+            
+            <br>
+            <br>
+
+
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Exprience</h1>
+
+
+
+            <div class="box">
+
+            </div>
+
+
+
+
+        </section>
     </main>
 
 
@@ -132,10 +195,10 @@
         // Load type.js animation through website
 
         var typed = new Typed('#element', {
-          strings: ['Web Developer!', 'Ehical Hacker!', 'Freelancer!' ],
-          typeSpeed: 50,
+            strings: ['Web Developer!', 'Ehical Hacker!', 'Freelancer!'],
+            typeSpeed: 50,
         });
-      </script>
+    </script>
 </body>
 
 </html>
