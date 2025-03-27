@@ -117,12 +117,49 @@
         width: 70vw;
         height: 2px;
         margin: 56px auto;
+        display: flex;
     }
 
 
 
     .text-grey {
         color: grey;
+    }
+
+
+    .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+
+
+    }
+
+    .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+    }
+
+    .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+
+    }
+
+    .vertical-desc {
+        position : relative;
+        top :86px;
+        color : grey;
+        width :150px;
+        font-size:9px;
+
+
+
+
     }
 </style>
 
@@ -170,6 +207,21 @@
 
 
             <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png" alt="Developer image">
+                    <div class="vertical-title">
+                        HTML Developer (2022-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam vero error velit laborum
+                        inventore exercitationem. Ipsam corrupti reprehenderit repellat, itaque nemo sunt laboriosam!
+                    </div>
+                </div>
+                <div class="vertical">
+                    JS Developer (2024-2025)
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
 
             </div>
 
@@ -186,7 +238,7 @@
         // Load type.js animation through website
 
         var typed = new Typed('#element', {
-            strings: ['Web Developer!', 'Ehical Hacker!', 'Freelancer!'],
+            strings: ['Web Developer!', 'Freelancer!', 'Web Designer!'],
             typeSpeed: 50,
         });
     </script>
