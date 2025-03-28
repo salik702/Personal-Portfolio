@@ -143,3 +143,15 @@
      font-size: 9px;
 
  }
+
+ footer{
+    background-color: #0e0e1a;
+    height :233px;
+ }
+
+ .footer{
+    display : flex;
+    margin :23px  122px;
+    
+
+ }
