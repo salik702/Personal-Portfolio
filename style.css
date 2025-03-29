@@ -131,7 +131,7 @@
      position: relative;
      top: 75px;
      width: 150px;
-     font-size:15px;
+     font-size: 15px;
 
  }
 
@@ -144,14 +144,28 @@
 
  }
 
- footer{
-    background-color: #0e0e1a;
-    height :233px;
+ footer {
+     background-color: #0e0e1a;
+     
  }
 
- .footer{
-    display : flex;
-    margin :23px  122px;
-    
 
+ .footer {
+     display: flex;
+     padding: 23px 122px;
+     justify-content: space-evenly;
  }
+
+.footer ul{
+    list-style: none;
+}
+
+.footer >div{
+    width :233px;
+}
+
+footer .footer-rights{
+    text-align: center;
+    color:grey;
+    padding :12px 0px;
+}
