@@ -223,29 +223,100 @@
  }
 
 
-.contact .content{
-    max-width: 800px;
-    text-align: center;
-}
-.contact .content h2{
-    font-size : 3em;
-    color : #fff;
-    font-weight :500
+ .contact .content {
+     max-width: 800px;
+     text-align: center;
+ }
+
+ .contact .content h2 {
+     font-size: 3em;
+     color: #fff;
+     font-weight: 500
+ }
+
+ .contact .content p {
+     color: #fff;
+     font-size: 1.1em;
+     font-weight: 300;
+ }
+
+ .container {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 50px;
+     margin-top: 30px;
+
+ }
+
+ .container .contactInfo {
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+
+ }
+
+ .container .contactInfo .box {
+     position: relative;
+     padding: 20px;
+     display: flex;
+     cursor: pointer;
+
+ }
+
+ .container .contactInfo .box .icon{
+    position : relative;
+    min-width:60px;
+    height :60px;
+    background: repeating-conic-gradient(from 27.5deg,#01dbc2 0%,#01dbc2 10% , transparent 10% , transparent 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+ }
+
+
+ .container .contactInfo .box .icon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 117.5deg,#01dbc2 0%,#01dbc2 10%, transparent 10%, transparent 50%);
+    z-index: 1;
 }
 
-.contact .content p{
-    color : #fff;
-    font-size :1.1em;
-    font-weight :300;
+.container .contactInfo .box .icon::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: #01dbc2; 
+    z-index: 1; 
 }
-.container{
-    width :100%;
-    display : flex;
-    justify-content : center;
-    align-items : center;
-    gap :50px;
-    background :#f00;
-    height :50px;
-    margin-top: 30px;
+
+.container .contactInfo .box .icon b {
+    position: absolute;
+    inset: 8px;
+    background: #01dbc2;
+    z-index: 2; 
+}
+
+.container .contactInfo .box .icon i {
+    position: relative;
+    z-index: 1000; 
+    color: #fff;
+    font-size: 1.25em;
+}
+
+.container .contactInfo .box .text{
+    position: relative;
+    display :flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 1.1em;
+    color:#fff;
+    font-family:300;
+    
 
 }
+
