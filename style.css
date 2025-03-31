@@ -210,6 +210,10 @@
 
  /* Contact Me Page css start */
 
+ .footer-style-contact {
+    font-family: 'Poppins', sans-serif;
+}
+
  .contact {
     position: relative;
     min-height: 100vh;
