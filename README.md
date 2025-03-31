@@ -12,7 +12,7 @@ Personal portfolio project using html and css <br>And then apply django to store
 
 
 <br> 
-Frontend : Html and css and bootstrap if required <br>
+Frontend : Html,css and bootstrap if required <br>
 Backend : Django <br>
 Database :Sqlite3 <br>
 
