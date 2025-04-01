@@ -13,7 +13,7 @@ Personal portfolio project using html and css <br>And then apply django to store
 
 <br> 
 Frontend : Html,css and bootstrap if required <br>
-Backend : Django <br>
+Backend : Django , Python <br>
 Database :Sqlite3 <br>
 
 Author : Salik Ahmad
