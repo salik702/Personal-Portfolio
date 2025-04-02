@@ -210,9 +210,6 @@
 
  /* Contact Me Page css start */
 
- .footer-style-contact {
-    font-family: 'Poppins', sans-serif;
-}
 
  .contact {
     position: relative;
@@ -235,13 +232,12 @@
 .contact .content h2 {
     font-size: 3em;
     color: #fff;
-    font-weight: 500
 }
 
 .contact .content p {
     color: #fff;
     font-size: 1.1em;
-    font-weight: 300;
+    /* font-weight: 300; */
 }
 
 .container {
@@ -334,7 +330,7 @@
 .container .contactInfo .txt {
     color: #fff;
     margin-top: 50px;
-    font-weight: 500;
+    /* font-weight: 500; */
     border-left: 50px solid #01dbc2;
     padding-left: 10px;
     line-height: 1em;
