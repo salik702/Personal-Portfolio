@@ -95,8 +95,11 @@
 
  .rightSection img {
      width: 60%;
+     
 
  }
+
+      
 
  .purple {
      color: rgb(135, 61, 205);
@@ -104,6 +107,7 @@
 
  #element {
      color: rgb(135, 61, 205);
+     margin-left: -9px;
 
  }
 
@@ -488,7 +492,8 @@
 }
 
 .container .contactForm form .inputBox input[type="submit"]:hover {
-    background-color: #873DCD;
+    background-color: purple;
+    color:white;
     box-shadow: 0 0 10px #873DCD;
 }
 
@@ -520,3 +525,66 @@ padding :40px;
      }
 
  }  
+
+/* About Us page css */
+
+span {
+    color:purple;
+    padding:8px;
+}
+
+.about {
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    padding : 12% 8%;
+    gap :10em;
+    background:black;
+
+
+}
+.about-img img{
+    position:relative;
+    width :550px;
+    box-shadow: 0 0 25px purple,
+                0 0 50px purple;
+
+     border-radius:50%;
+
+}
+.about-content h2{
+    text-align: left;
+    color: white;
+    
+}
+
+.about-content h3{
+    font-size :62px;
+    color: white;
+
+}
+.about-content p{
+    color:white;
+    font-size : 20px;
+    margin : 2em 0 3em;
+    
+
+}
+
+.btn-2{
+    padding: 15px;
+    background-color:purple;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.btn-2:hover {
+    background-color: #1e2167;
+    color: white;
+    font-size: 1.5rem;
+}
+
