@@ -13,21 +13,143 @@
 </head>
 <link rel="stylesheet" href="style.css">
 
-<body>
+<body style="background-color: #1c1a1a;">
     <header>
         <nav>
             <div class="left">Salik's Portfolio </div>
             <div class="right">
                 <ul class="footer-active">
-                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="/about.html">About</a></li>
-                    <li><a href="/skills.html">My Skills</a></li>
-                    <li><a href="/projects.html" class="active">Projects</a></li>
+                    <li><a href="/skills.html" class="active">My Skills</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
                     <li><a href="/contactme.html">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
+
+
+
+    <section id="skill-section">
+        <div class="skill-head" style="margin-left: 200px;">
+            <h2 style="margin-left: 162px;">My <span>Skills</span></h2>
+            <p style="margin-left: 55px;">Here are my skills to represent my Expertise</p>
+        </div>
+
+        <div class="skill-main">
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Html</p>
+                    <p class="percent">90%</p>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Css</p>
+                    <p class="percent">85%</p>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>JavaScript</p>
+                    <p class="percent">80%</p>
+                </div>
+                <div class="bar">
+                    <span class="js"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>React Js</p>
+                    <p class="percent">75%</p>
+                </div>
+                <div class="bar">
+                    <span class="react"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Node Js</p>
+                    <p class="percent">70%</p>
+                </div>
+                <div class="bar">
+                    <span class="nodejs"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Express Js</p>
+                    <p class="percent">65%</p>
+                </div>
+                <div class="bar">
+                    <span class="express"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Mongo DB</p>
+                    <p class="percent">60%</p>
+                </div>
+                <div class="bar">
+                    <span class="mongo"></span>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="info">
+                    <p>Python</p>
+                    <p class="percent">79%</p>
+                </div>
+                <div class="bar">
+                    <span class="python"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillBars = document.querySelectorAll('.skill-bar');
+
+            skillBars.forEach(bar => {
+                const percentText = bar.querySelector('.percent').innerText;
+                const percentage = parseInt(percentText);
+                const fillBar = bar.querySelector('span');
+                fillBar.style.width = `${percentage}%`;
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -48,7 +170,7 @@
                     <a href="about.html" class="footerpage-links">
                         <li>About</li>
                     </a>
-                    <a href="/skills.html" class="footerpage-links">
+                    <a href="skills.html" class="footerpage-links">
                         <li>My Skills</li>
                     </a>
                     <a href="projects.html" class="footerpage-links">
@@ -114,8 +236,5 @@
 
 
 
-
-   
-</body>
-
 </html>
+</body>
