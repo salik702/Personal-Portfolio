@@ -3,8 +3,8 @@ Personal portfolio project using html and css <br>And then apply django to store
 <br>Project contains 5 different page 
 <br>1 Home
 <br>2 About
-<br>3 Services
-<br>4 Projects
+<br>3 My Skills
+<br>4 Services
 <br>5 Contact Me
 <br>6 Style.css
 
@@ -12,7 +12,7 @@ Personal portfolio project using html and css <br>And then apply django to store
 
 
 <br> 
-Frontend : Html,css and bootstrap if required <br>
+Frontend : Html and css <br>
 Backend : Django , Python <br>
 Database :Sqlite3 <br>
 

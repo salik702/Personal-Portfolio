@@ -374,7 +374,7 @@
 
 .container .contactForm {
     position: relative;
-    width: 110%;
+    width: 500px;
     background: repeating-conic-gradient(from var(--a), #873DCD 0%, #873DCD, transparent 10%, transparent 50%);
     animation: animate 6s linear infinite;
     padding: 60px
@@ -689,5 +689,209 @@ body {
 
 
 
+/* Services Page css page no 4 */
 
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    
+
+
+}
+
+body {
+    background-color: rgb(3, 3, 43);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primery-color: #fd562a;
+    --secondary-color:rgba(255,255,255,.4);
+
+
+}
+
+#service-section{
+    height :600px;
+    width : 100%;
+    background-color: #20223a;
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+
+}
+
+#service-section h2{
+    color  :#fff;
+    font-size : 2rem;
+    margin-bottom: 20px;
+    position: relative;
+
+
+}
+
+
+#service-section h2::after{
+   position: absolute;
+   content :" ";
+   top :30%;
+   left : -30px;
+   height: 0px;
+   width: 0px;
+   border-top :20px solid transparent;
+   border-right  :20px solid var(--primary-color);
+
+
+
+
+}
+
+#service-section h2::before{
+    position: absolute;
+    content :" ";
+    top :30%;
+    left : -30px;
+    height: 0px;
+    width: 0px;
+    border-top :20px solid transparent;
+    border-right  :20px solid var(--primary-color);
+ 
+ 
+ 
+ 
+ }
+
+.service-section #paragraph{
+    width :45px;
+    font-size :1rem;
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    line-height: 1.5rem;
+    white-space: 1px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+
+
+
+
+}
+
+.cards {
+    display: flex;
+    grid-template-columns: repeat(3,1fr);
+    gap : 25px;
+    z-index:9;
+    margin-top: 20px;
+
+}
+
+
+.cards .card{
+    min-height :420px;
+    width :390px;
+    display : flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding  :0 8%;
+    background-color: rgb(65,62,105);
+    position: relative;
+    border-radius:10px;
+    margin : 0 10px;
+
+
+
+
+}
+
+
+.cards .card:before{
+    position: absolute;
+    content :" ";
+    height: 100%;
+    width  :100%;
+    top :0;
+    left :0;
+    border-radius: 10px;
+    background : purple;
+    transform: rotate(0deg);
+    z-index: -1;
+
+
+}
+
+.cards .card:hover.card::before{
+      transform : rotate(10deg); 
+
+}
+.cards .card i{
+    font-size: 2.5rem;
+    color : var(--primary-color);
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+
+}
+
+.cards .card h3 {
+    font-size : 1.8rem;
+    color : #fff;
+    margin : bottom;
+
+
+}
+
+.cards .card .content p {
+    color : rgba(255,255,255,0.5);
+    font-size : 1.05rem;
+    margin-bottom: 20px;
+    font-weight : 500;
+
+    
+
+
+
+}
+
+.sa{
+    color: purple;
+}
+
+
+
+@media(max-width:1100px){
+    #service-section  h2{
+        margin-top:30px;
+
+    }   
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    #service-section #paragraph{
+        width :80%;
+
+    }
+}
+@media(max-width:900px){
+    .cards .card{
+        height :300px;
+        width :400px;
+        margin :20px 0;
+
+
+
+
+    }
+
+
+}
 
