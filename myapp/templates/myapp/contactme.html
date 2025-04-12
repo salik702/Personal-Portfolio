@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +15,7 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
 </head>
 
 
@@ -24,11 +25,11 @@
             <div class="left">Salik's Portfolio </div>
             <div class="right">
                 <ul class="footer-active">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="skills.html">My Skills</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="contactme.html" class="active">Contact Me</a></li>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'skills' %}">My Skills</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'contactme' %}" class="active">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -113,22 +114,22 @@
         </div>
         <div class="footer-second">
             <ul>
-                <a href="index.html" class="footerpage-links">
+                <a href="{% url 'home' %}" class="footerpage-links">
                     <li>Home</li>
                 </a>
 
 
                 </a>
-                <a href="about.html" class="footerpage-links">
+                <a href="{% url 'about' %}" class="footerpage-links">
                     <li>About</li>
                 </a>
-                <a href="skills.html" class="footerpage-links">
+                <a href="{% url 'skills' %}" class="footerpage-links">
                     <li>My Skills</li>
                 </a>
-                <a href="services.html" class="footerpage-links">
+                <a href="{% url 'services' %}" class="footerpage-links">
                     <li>Services</li>
                 </a>
-                <a href="contactme.html" class="footerpage-links">
+                <a href="{% url 'contactme' %}" class="footerpage-links">
                     <li>Contact Me</li>
                 </a>
             </ul>
