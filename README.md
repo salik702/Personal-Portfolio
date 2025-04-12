@@ -1,5 +1,5 @@
 # Personal-Portfolio
-Personal portfolio project using html and css <br>And then apply django to store contact me form details then verify those details
+Personal portfolio project using html and css <br>And then apply django to store contact me form details in sqlite3
 <br>Project contains 5 different page 
 <br>1 Home
 <br>2 About

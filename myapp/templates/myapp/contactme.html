@@ -83,18 +83,29 @@
                 </ul>
             </div>
             <div class="contactForm">
-                <form>
+                <form method="POST">
+                    {% csrf_token %}
                     <h2>Contact Me</h2>
+            
+                    <!-- Display messages -->
+                    {% if messages %}
+                        <ul class="messages">
+                            {% for message in messages %}
+                                <li class="success">{{ message }}</li> <!-- Add custom styling if necessary -->
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+            
                     <div class="inputBox">
-                        <input type="text" required>
+                        <input type="text" name="full_name" required>
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="email" required>
+                        <input type="email" name="email" required>
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea required></textarea>
+                        <textarea name="message" required></textarea>
                         <span>Type your Message...</span>
                     </div>
                     <div class="inputBox">
@@ -102,7 +113,7 @@
                     </div>
                 </form>
             </div>
-        </div>
+            
     </section>
             
 

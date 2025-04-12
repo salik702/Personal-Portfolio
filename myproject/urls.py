@@ -22,7 +22,7 @@ urlpatterns = [
 ]
 
 from django.urls import path
-from myapp import views  # ✅ use your actual app name
+from myapp import views  
 
 
 urlpatterns = [
@@ -39,6 +39,6 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('myapp.urls')),  # use your actual app name
+    path('', include('myapp.urls')),  
     path('admin/', admin.site.urls),
 ]
