@@ -558,9 +558,9 @@ span {
 }
 
 .btn-2:hover {
-    background-color: #1e2167;
-    color: white;
-    font-size: 1.5rem;
+         background-color: white;
+     color: white;
+     font-size: 1.04rem;
 }
 
 /* Skills Page css */
@@ -887,4 +887,6 @@ body {
 
 
 
-/* Now make website responsive */
+
+
+
