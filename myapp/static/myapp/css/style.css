@@ -241,7 +241,7 @@
 .contact .content p {
     color: #fff;
     font-size: 1.1em;
-    /* font-weight: 300; */
+    
 }
 
 .container {
@@ -334,7 +334,6 @@
 .container .contactInfo .txt {
     color: #fff;
     margin-top: 50px;
-    /* font-weight: 500; */
     border-left: 50px solid #873DCD;
     padding-left: 10px;
     line-height: 1em;
@@ -498,35 +497,11 @@
 }
 
 
- /* now make responsive */
-
- @media (max-width: 991px) {
-     .contact {
-         padding: 50px;
-     }
-
-     .container {
-         flex-direction: column;
-     }
-
-     .container .contactInfo,
-     .container .contactForm {
-
-
-         width: 100px;
-
-     }
-.container .contactForm{
-padding :40px;
-}
-
-     .container .contactForm form {
-         padding: 10px;
-     }
-
- }  
+ 
 
 /* About Us page css */
+
+
 
 span {
     color:purple;
@@ -600,7 +575,6 @@ span {
     margin-left:50px;
 }
 
-.skill-head
 
 .header {
     width: 70%;
@@ -910,3 +884,7 @@ body {
     padding: 10px;
     border-radius: 5px;
 }
+
+
+
+/* Now make website responsive */
